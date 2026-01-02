@@ -1,0 +1,339 @@
+{
+  "dataset": {
+    "name": "Mid-Long Distance Runners",
+    "source": "Kaggle",
+    "n_athletes": 74,
+    "n_days": 42766,
+    "n_injuries": 583,
+    "injury_rate_pct": 1.3632324743955477,
+    "avg_days_per_athlete": 577.918918918919
+  },
+  "zone_analysis": [
+    {
+      "zone": "low",
+      "n_days": 10175,
+      "n_injuries": 76,
+      "mean_acwr": 0.47234632164548057,
+      "injury_rate_pct": 0.7469287469287469,
+      "injury_rate_per_1000": 7.469287469287469,
+      "relative_risk": 0.36319410319410317
+    },
+    {
+      "zone": "optimal",
+      "n_days": 22173,
+      "n_injuries": 456,
+      "mean_acwr": 1.0372572584916133,
+      "injury_rate_pct": 2.056555269922879,
+      "injury_rate_per_1000": 20.56555269922879,
+      "relative_risk": 1.0
+    },
+    {
+      "zone": "caution",
+      "n_days": 3360,
+      "n_injuries": 29,
+      "mean_acwr": 1.3843285070016942,
+      "injury_rate_pct": 0.8630952380952381,
+      "injury_rate_per_1000": 8.630952380952381,
+      "relative_risk": 0.41968005952380955
+    },
+    {
+      "zone": "high",
+      "n_days": 2637,
+      "n_injuries": 10,
+      "mean_acwr": 1.6794274159223774,
+      "injury_rate_pct": 0.37921880925293894,
+      "injury_rate_per_1000": 3.7921880925293894,
+      "relative_risk": 0.18439514599924156
+    },
+    {
+      "zone": "critical",
+      "n_days": 1713,
+      "n_injuries": 0,
+      "mean_acwr": 2.7537192821947176,
+      "injury_rate_pct": 0.0,
+      "injury_rate_per_1000": 0.0,
+      "relative_risk": 0.0
+    }
+  ],
+  "zone_boundaries": [
+    0.8,
+    1.3,
+    1.5,
+    2.0
+  ],
+  "relative_risk_1.3": {
+    "relative_risk": 0.30757145782744805,
+    "ci_lower": 0.22240764258971538,
+    "ci_upper": 0.42534600236114445,
+    "p_value": 4.022665736296819e-17,
+    "threshold": 1.3,
+    "n_high_acwr": 7710,
+    "n_low_acwr": 32348,
+    "injuries_high_acwr": 39,
+    "injuries_low_acwr": 532,
+    "rate_high_acwr": 0.005058365758754864,
+    "rate_low_acwr": 0.0164461481389885,
+    "statistically_significant": true
+  },
+  "relative_risk_1.5": {
+    "relative_risk": 0.14632327330096093,
+    "ci_lower": 0.07836021919049947,
+    "ci_upper": 0.2732317562493949,
+    "p_value": 2.7839108603612937e-17,
+    "threshold": 1.5,
+    "n_high_acwr": 4350,
+    "n_low_acwr": 35708,
+    "injuries_high_acwr": 10,
+    "injuries_low_acwr": 561,
+    "rate_high_acwr": 0.0022988505747126436,
+    "rate_low_acwr": 0.01571076509465666,
+    "statistically_significant": true
+  },
+  "relative_risk_2.0": {
+    "relative_risk": 0.0,
+    "ci_lower": NaN,
+    "ci_upper": NaN,
+    "p_value": 2.064573866019576e-11,
+    "threshold": 2.0,
+    "n_high_acwr": 1713,
+    "n_low_acwr": 38345,
+    "injuries_high_acwr": 0,
+    "injuries_low_acwr": 571,
+    "rate_high_acwr": 0.0,
+    "rate_low_acwr": 0.01489112009388447,
+    "statistically_significant": true
+  },
+  "train_test_validation": {
+    "train": {
+      "n_athletes": 52,
+      "n_days": 30746,
+      "n_injuries": 436,
+      "relative_risk": 0.20748169014084508,
+      "ci_lower": 0.11095184252675518,
+      "ci_upper": 0.387994023022383,
+      "p_value": 2.250829492718276e-10,
+      "significant": true
+    },
+    "test": {
+      "n_athletes": 22,
+      "n_days": 9312,
+      "n_injuries": 135,
+      "relative_risk": 0.0,
+      "ci_lower": NaN,
+      "ci_upper": NaN,
+      "p_value": 8.226278874016922e-09,
+      "significant": true
+    }
+  },
+  "overfitting_check": {
+    "train_rr": 0.20748169014084508,
+    "test_rr": 0.0,
+    "relative_difference_pct": 100.0,
+    "overfitting_concern": true
+  },
+  "alternative_boundaries": {
+    "default": {
+      "boundaries": [
+        0.8,
+        1.3,
+        1.5,
+        2.0
+      ],
+      "relative_risk": 0.14632327330096093,
+      "ci_lower": 0.07836021919049947,
+      "ci_upper": 0.2732317562493949,
+      "p_value": 2.7839108603612937e-17,
+      "significant": true
+    },
+    "conservative": {
+      "boundaries": [
+        0.7,
+        1.2,
+        1.4,
+        1.8
+      ],
+      "relative_risk": 0.17570982246858974,
+      "ci_lower": 0.10697846836880541,
+      "ci_upper": 0.28859958627848575,
+      "p_value": 4.5541474276128364e-20,
+      "significant": true
+    },
+    "aggressive": {
+      "boundaries": [
+        0.85,
+        1.35,
+        1.6,
+        2.2
+      ],
+      "relative_risk": 0.1343774800185105,
+      "ci_lower": 0.06382242845552809,
+      "ci_upper": 0.2829304301497655,
+      "p_value": 5.129939774587298e-14,
+      "significant": true
+    },
+    "narrow_optimal": {
+      "boundaries": [
+        0.85,
+        1.2,
+        1.5,
+        2.0
+      ],
+      "relative_risk": 0.14632327330096093,
+      "ci_lower": 0.07836021919049947,
+      "ci_upper": 0.2732317562493949,
+      "p_value": 2.7839108603612937e-17,
+      "significant": true
+    },
+    "wide_optimal": {
+      "boundaries": [
+        0.7,
+        1.4,
+        1.5,
+        2.0
+      ],
+      "relative_risk": 0.14632327330096093,
+      "ci_lower": 0.07836021919049947,
+      "ci_upper": 0.2732317562493949,
+      "p_value": 2.7839108603612937e-17,
+      "significant": true
+    }
+  },
+  "sensitivity_analysis": [
+    {
+      "threshold": 1.0,
+      "relative_risk": 1.158992051335245,
+      "ci_lower": 0.9838621925751494,
+      "ci_upper": 1.365295450110182,
+      "p_value": 0.0837018130385496,
+      "n_high": 20699,
+      "injuries_high": 316
+    },
+    {
+      "threshold": 1.1,
+      "relative_risk": 0.8255098485696866,
+      "ci_lower": 0.694907916138911,
+      "ci_upper": 0.9806572845967159,
+      "p_value": 0.030048178621932563,
+      "n_high": 15308,
+      "injuries_high": 193
+    },
+    {
+      "threshold": 1.2000000000000002,
+      "relative_risk": 0.4029649717259304,
+      "ci_lower": 0.3155177116287305,
+      "ci_upper": 0.514648662985846,
+      "p_value": 5.845421150052089e-16,
+      "n_high": 10685,
+      "injuries_high": 73
+    },
+    {
+      "threshold": 1.3000000000000003,
+      "relative_risk": 0.30757145782744805,
+      "ci_lower": 0.22240764258971538,
+      "ci_upper": 0.42534600236114445,
+      "p_value": 4.022665736296819e-17,
+      "n_high": 7710,
+      "injuries_high": 39
+    },
+    {
+      "threshold": 1.4000000000000004,
+      "relative_risk": 0.17585483391935006,
+      "ci_lower": 0.10706680720399821,
+      "ci_upper": 0.28883762783623335,
+      "p_value": 4.5201971994215435e-20,
+      "n_high": 5642,
+      "injuries_high": 16
+    },
+    {
+      "threshold": 1.5000000000000004,
+      "relative_risk": 0.14654999786621495,
+      "ci_lower": 0.07848171206532269,
+      "ci_upper": 0.2736548593220257,
+      "p_value": 4.284254106454055e-17,
+      "n_high": 4344,
+      "injuries_high": 10
+    },
+    {
+      "threshold": 1.6000000000000005,
+      "relative_risk": 0.13485576115088568,
+      "ci_lower": 0.0640497451260948,
+      "ci_upper": 0.283936747598008,
+      "p_value": 4.9788812850112945e-14,
+      "n_high": 3376,
+      "injuries_high": 7
+    },
+    {
+      "threshold": 1.7000000000000006,
+      "relative_risk": 0.09552105039098384,
+      "ci_lower": 0.03575448011144466,
+      "ci_upper": 0.25519238538379097,
+      "p_value": 3.9274410416666793e-13,
+      "n_high": 2755,
+      "injuries_high": 4
+    },
+    {
+      "threshold": 1.8000000000000007,
+      "relative_risk": 0.08714904103520203,
+      "ci_lower": 0.028045671543870037,
+      "ci_upper": 0.2708066854977969,
+      "p_value": 3.446625413471513e-11,
+      "n_high": 2289,
+      "injuries_high": 3
+    },
+    {
+      "threshold": 1.9000000000000008,
+      "relative_risk": 0.0,
+      "ci_lower": NaN,
+      "ci_upper": NaN,
+      "p_value": 8.143198531456021e-13,
+      "n_high": 1933,
+      "injuries_high": 0
+    },
+    {
+      "threshold": 2.000000000000001,
+      "relative_risk": 0.0,
+      "ci_lower": NaN,
+      "ci_upper": NaN,
+      "p_value": 3.089016283050771e-11,
+      "n_high": 1679,
+      "injuries_high": 0
+    },
+    {
+      "threshold": 2.100000000000001,
+      "relative_risk": 0.0,
+      "ci_lower": NaN,
+      "ci_upper": NaN,
+      "p_value": 1.2358878413896194e-09,
+      "n_high": 1462,
+      "injuries_high": 0
+    },
+    {
+      "threshold": 2.200000000000001,
+      "relative_risk": 0.0,
+      "ci_lower": NaN,
+      "ci_upper": NaN,
+      "p_value": 2.0363104095116687e-08,
+      "n_high": 1277,
+      "injuries_high": 0
+    },
+    {
+      "threshold": 2.300000000000001,
+      "relative_risk": 0.0,
+      "ci_lower": NaN,
+      "ci_upper": NaN,
+      "p_value": 1.3452829663879438e-07,
+      "n_high": 1127,
+      "injuries_high": 0
+    },
+    {
+      "threshold": 2.4000000000000012,
+      "relative_risk": 0.0,
+      "ci_lower": NaN,
+      "ci_upper": NaN,
+      "p_value": 1.0265957414005642e-06,
+      "n_high": 1007,
+      "injuries_high": 0
+    }
+  ],
+  "optimal_threshold": 1.1
+}

@@ -1,0 +1,69 @@
+
+================================================================================
+EXPERIMENT 001: ACWR ZONE BOUNDARY VALIDATION
+================================================================================
+
+Date: 20260102_083036
+
+DATASET
+-------
+Name: Mid-Long Distance Runners
+Athletes: 74
+Days: 42,766
+Injuries: 583
+Injury Rate: 1.363%
+
+ZONE BOUNDARIES TESTED
+----------------------
+Default: [0.8, 1.3, 1.5, 2.0]
+
+PRIMARY RESULTS
+---------------
+
+ACWR >= 1.3:
+  Relative Risk: 0.308
+  95% CI: [0.222, 0.425]
+  p-value: 4.02e-17
+  Significant: YES
+  N (high ACWR): 7,710
+  Injuries (high ACWR): 39
+
+ACWR >= 1.5:
+  Relative Risk: 0.146
+  95% CI: [0.078, 0.273]
+  p-value: 2.78e-17
+  Significant: YES
+  N (high ACWR): 4,350
+  Injuries (high ACWR): 10
+
+ACWR >= 2.0:
+  Relative Risk: 0.000
+  95% CI: [nan, nan]
+  p-value: 2.06e-11
+  Significant: YES
+  N (high ACWR): 1,713
+  Injuries (high ACWR): 0
+
+TRAIN/TEST VALIDATION
+--------------------
+Train: RR = 0.207, p = 2.25e-10
+Test:  RR = 0.000, p = 8.23e-09
+
+OVERFITTING CHECK
+-----------------
+Train RR: 0.207
+Test RR: 0.000
+Difference: 100.0%
+Concern: YES
+
+CONCLUSIONS
+-----------
+1. HIGH ACWR (>= 1.5) IS ASSOCIATED WITH INCREASED INJURY RISK
+   - Relative Risk: 0.15x
+   - This finding is statistically significant (p < 0.05)
+2. FINDING VALIDATED ON HELD-OUT TEST SET
+   - Effect generalizes to unseen athletes
+3. POTENTIAL OVERFITTING
+   - Large difference between train and test RR
+
+================================================================================

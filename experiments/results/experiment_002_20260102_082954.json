@@ -1,0 +1,283 @@
+{
+  "dataset": {
+    "name": "Mid-Long Distance Runners",
+    "n_athletes": 74,
+    "n_days": 42766,
+    "n_injuries": 583
+  },
+  "injury_events": {
+    "n_events": 365,
+    "mean_duration_days": 57.632876712328766,
+    "median_duration_days": 34.0,
+    "max_duration_days": 356.0
+  },
+  "lagged_analysis": {
+    "0": {
+      "lag_days": 0,
+      "n_pre_injury": 373,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.0208247072384753,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": -0.018081492631244478,
+      "p_value": 0.4378026070482618,
+      "significant": false
+    },
+    "1": {
+      "lag_days": 1,
+      "n_pre_injury": 359,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.044956989961816,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": 0.006050790092096303,
+      "p_value": 0.3189518037807191,
+      "significant": false
+    },
+    "2": {
+      "lag_days": 2,
+      "n_pre_injury": 359,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.0414696545605693,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": 0.0025634546908495093,
+      "p_value": 0.2349807583825898,
+      "significant": false
+    },
+    "3": {
+      "lag_days": 3,
+      "n_pre_injury": 357,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.061465692631459,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": 0.022559492761739186,
+      "p_value": 0.6215030492620646,
+      "significant": false
+    },
+    "4": {
+      "lag_days": 4,
+      "n_pre_injury": 354,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.0603630685170253,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": 0.02145686864730556,
+      "p_value": 0.9122217575854265,
+      "significant": false
+    },
+    "5": {
+      "lag_days": 5,
+      "n_pre_injury": 355,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.0744444941051958,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": 0.03553829423547605,
+      "p_value": 0.28395506487152056,
+      "significant": false
+    },
+    "6": {
+      "lag_days": 6,
+      "n_pre_injury": 357,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.0500199916485395,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": 0.01111379177881977,
+      "p_value": 0.728153065236157,
+      "significant": false
+    },
+    "7": {
+      "lag_days": 7,
+      "n_pre_injury": 357,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.061634954541701,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": 0.02272875467198121,
+      "p_value": 0.46700774905073783,
+      "significant": false
+    },
+    "8": {
+      "lag_days": 8,
+      "n_pre_injury": 357,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.0442584670498416,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": 0.005352267180121828,
+      "p_value": 0.44445975599998155,
+      "significant": false
+    },
+    "9": {
+      "lag_days": 9,
+      "n_pre_injury": 357,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.0346686402680176,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": -0.004237559601702134,
+      "p_value": 0.8021619282605407,
+      "significant": false
+    },
+    "10": {
+      "lag_days": 10,
+      "n_pre_injury": 358,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.0132196046558313,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": -0.025686595213888497,
+      "p_value": 0.9366376203152906,
+      "significant": false
+    },
+    "11": {
+      "lag_days": 11,
+      "n_pre_injury": 357,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 1.007499785027183,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": -0.03140641484253681,
+      "p_value": 0.4447203591572284,
+      "significant": false
+    },
+    "12": {
+      "lag_days": 12,
+      "n_pre_injury": 362,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 0.9815326614979374,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": -0.057373538371782384,
+      "p_value": 0.04172492808197234,
+      "significant": true
+    },
+    "13": {
+      "lag_days": 13,
+      "n_pre_injury": 361,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 0.9982028662279179,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": -0.0407033336418019,
+      "p_value": 0.08002227390891348,
+      "significant": false
+    },
+    "14": {
+      "lag_days": 14,
+      "n_pre_injury": 360,
+      "n_non_injury": 39429,
+      "pre_injury_mean_acwr": 0.994759781082704,
+      "non_injury_mean_acwr": 1.0389061998697198,
+      "acwr_difference": -0.04414641878701575,
+      "p_value": 0.09532111572087142,
+      "significant": false
+    }
+  },
+  "pre_injury_comparison": {
+    "n_pre_injury_week": 2498,
+    "n_control": 35181,
+    "pre_injury_mean_acwr": 1.0562960588892132,
+    "control_mean_acwr": 1.0389262698945114,
+    "difference": 0.017369788994701763,
+    "p_value": 0.7204057917952903,
+    "cohens_d": 0.03028569949409667,
+    "significant": false
+  },
+  "optimal_lag": {
+    "lag": 5,
+    "auc": 0.5080196285029402,
+    "n_samples": 39713,
+    "n_injuries": 515.0
+  },
+  "all_lag_aucs": {
+    "1": {
+      "lag": 1,
+      "auc": 0.48436052412943587,
+      "n_samples": 39989,
+      "n_injuries": 545.0
+    },
+    "2": {
+      "lag": 2,
+      "auc": 0.4858242087199562,
+      "n_samples": 39920,
+      "n_injuries": 534.0
+    },
+    "3": {
+      "lag": 3,
+      "auc": 0.4902435529307314,
+      "n_samples": 39851,
+      "n_injuries": 524.0
+    },
+    "4": {
+      "lag": 4,
+      "auc": 0.49781552476769475,
+      "n_samples": 39782,
+      "n_injuries": 518.0
+    },
+    "5": {
+      "lag": 5,
+      "auc": 0.5080196285029402,
+      "n_samples": 39713,
+      "n_injuries": 515.0
+    },
+    "6": {
+      "lag": 6,
+      "auc": 0.5012376821624343,
+      "n_samples": 39644,
+      "n_injuries": 520.0
+    },
+    "7": {
+      "lag": 7,
+      "auc": 0.5036459385156635,
+      "n_samples": 39574,
+      "n_injuries": 521.0
+    },
+    "8": {
+      "lag": 8,
+      "auc": 0.5042580973908496,
+      "n_samples": 39504,
+      "n_injuries": 519.0
+    },
+    "9": {
+      "lag": 9,
+      "auc": 0.5007341410224508,
+      "n_samples": 39436,
+      "n_injuries": 521.0
+    },
+    "10": {
+      "lag": 10,
+      "auc": 0.5001823932719494,
+      "n_samples": 39368,
+      "n_injuries": 522.0
+    },
+    "11": {
+      "lag": 11,
+      "auc": 0.49057084743511997,
+      "n_samples": 39300,
+      "n_injuries": 522.0
+    },
+    "12": {
+      "lag": 12,
+      "auc": 0.4778460240416305,
+      "n_samples": 39232,
+      "n_injuries": 527.0
+    },
+    "13": {
+      "lag": 13,
+      "auc": 0.4769793945272649,
+      "n_samples": 39163,
+      "n_injuries": 529.0
+    },
+    "14": {
+      "lag": 14,
+      "auc": 0.4770018256998134,
+      "n_samples": 39094,
+      "n_injuries": 527.0
+    }
+  },
+  "lagged_relative_risk": {
+    "lag_days": 7,
+    "threshold": 1.5,
+    "n_high_acwr": 4294,
+    "n_low_acwr": 35280,
+    "injuries_high_acwr": 71.0,
+    "injuries_low_acwr": 450.0,
+    "rate_high": 0.016534699580810434,
+    "rate_low": 0.012755102040816327,
+    "relative_risk": 1.296320447135538,
+    "ci_lower": 1.0113185567410152,
+    "ci_upper": 1.6616393424807103,
+    "p_value": 0.046705600246588284,
+    "significant": true
+  }
+}

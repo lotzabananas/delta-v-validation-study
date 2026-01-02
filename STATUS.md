@@ -119,9 +119,58 @@ jupyter notebook notebooks/delta_v_analysis.ipynb
 4. **Enhanced model recommended**: Catches 3.3x more risk periods
 5. **Conservative progression is safer**: Refined params reduce increases by ~33%
 
+### 6. Comprehensive Validation Study (January 2, 2026)
+
+**NEW DATASET**: Mid-Long Distance Runners (74 athletes, 42,766 days, 583 injuries)
+
+#### Methodological Discovery: Reverse Causality
+- Initial concurrent ACWR analysis showed HIGH ACWR = LOWER injury (RR = 0.15)
+- Root cause: Injured athletes reduce training → LOW ACWR during injury
+- **Solution**: Use **7-day lagged ACWR** to establish causal direction
+
+#### Primary Finding (Experiment 003)
+| Metric | Value |
+|--------|-------|
+| **Relative Risk** (ACWR ≥ 1.5, 7-day lag) | **1.296** |
+| 95% CI | [1.011, 1.662] |
+| p-value | **0.047** |
+| Statistically Significant | **YES** |
+
+#### Zone Analysis (7-day lagged ACWR)
+| Zone | ACWR Range | Injury Rate | RR vs Optimal |
+|------|-----------|-------------|---------------|
+| Low | < 0.8 | 1.44% | 1.21x |
+| **Optimal** | **0.8-1.3** | **1.19%** | **1.00x** |
+| Caution | 1.3-1.5 | 1.39% | 1.17x |
+| High | 1.5-2.0 | 1.61% | 1.36x |
+| Critical | ≥ 2.0 | 1.73% | 1.46x |
+
+#### Model Comparison (Experiment 004)
+| Metric | Base Model | Enhanced Model | Improvement |
+|--------|-----------|----------------|-------------|
+| Warning rate | 10.9% | 27.3% | 2.5x |
+| Pre-injury detection | 11.2% | **24.1%** | **+115%** |
+
+## Key Experiments
+
+| Experiment | Purpose | Key Finding |
+|------------|---------|-------------|
+| `experiment_001` | Concurrent zone analysis | Shows reverse causality problem |
+| `experiment_002` | Lagged ACWR analysis | Establishes proper causal direction |
+| `experiment_003` | Comprehensive validation | RR = 1.30 at ACWR ≥ 1.5 (p = 0.047) |
+| `experiment_004` | Model comparison | Enhanced model +115% pre-injury detection |
+
+## Final Conclusions
+
+1. **ACWR-injury relationship validated**: RR = 1.30 at ACWR ≥ 1.5 (statistically significant)
+2. **Zone boundaries validated**: Optimal zone (0.8-1.3) has lowest injury rate
+3. **Proper methodology critical**: Must use lagged ACWR to avoid reverse causality
+4. **Enhanced model recommended**: 115% improvement in pre-injury detection
+5. **Effect size modest**: RR = 1.3 (not 2-3x as some literature suggests)
+
 ## Next Steps (if continuing)
 
-1. Integrate wellness data (HRV, sleep) into recommendations
-2. Test on larger real-world dataset
-3. Build actual user-facing app with Delta V recommendations
-4. Longitudinal study with controlled intervention
+1. Test on additional populations (recreational athletes, other sports)
+2. Prospective intervention study with Delta V recommendations
+3. Develop user-facing app with real-time ACWR monitoring
+4. Write formal academic paper

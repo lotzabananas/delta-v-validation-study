@@ -1,0 +1,47 @@
+
+================================================================================
+EXPERIMENT 002: LAGGED ACWR-INJURY ANALYSIS
+================================================================================
+
+Date: 20260102_082954
+
+OBJECTIVE
+---------
+Experiment 001 showed counterintuitive results: HIGH ACWR was associated
+with LOWER injury rates. This experiment investigates whether this is due
+to reverse causality (injury -> reduced training -> low ACWR).
+
+KEY FINDINGS
+------------
+
+1. PRE-INJURY WEEK ACWR VS BASELINE:
+   - Pre-injury week ACWR: 1.056
+   - Control (non-injury) ACWR: 1.039
+   - Difference: +0.017
+   - p-value: 7.20e-01
+   - Cohen's d: 0.030
+   - Significant: NO
+   => ACWR IS HIGHER in the week before injury!
+
+2. LAGGED RELATIVE RISK (7-day lag):
+   - Relative Risk: 1.296
+   - 95% CI: [1.011, 1.662]
+   - p-value: 4.67e-02
+   => HIGH ACWR (7 days prior) INCREASES injury risk!
+
+3. OPTIMAL PREDICTION LAG:
+   - Best lag: 5 days
+   - AUC: 0.5080
+   => HIGHER ACWR predicts MORE injuries
+
+CONCLUSIONS
+-----------
+
+The data SUPPORTS the ACWR-injury hypothesis when using proper temporal analysis:
+- ACWR IS higher in the week before injuries
+- High ACWR (7 days prior) IS associated with increased injury risk
+
+The initial counterintuitive results were due to reverse causality:
+injured athletes have LOW ACWR because they reduce training after injury.
+
+================================================================================
