@@ -1,0 +1,20 @@
+{
+  "threshold_low": 0.7288641068536095,
+  "threshold_optimal_high": 1.3683551866464587,
+  "threshold_caution": 1.589565080399933,
+  "threshold_critical": 1.857170977754538,
+  "green_base": 0.198759752731878,
+  "green_min": 0.07922927810608335,
+  "green_max": 0.17266212099701378,
+  "low_base": 0.25787836174707257,
+  "low_min": 0.13925816675734223,
+  "low_max": 0.150438516503387,
+  "caution_value": 0.037668254024198065,
+  "red_base": -0.15603393704574484,
+  "red_min": -0.12007749363610017,
+  "red_max": -0.05689061112783289,
+  "critical_value": -0.32161096697770003,
+  "critical_flag": true,
+  "persistent_weeks_threshold": 2,
+  "persistent_critical_action": -0.3
+}

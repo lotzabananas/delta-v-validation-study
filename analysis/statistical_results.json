@@ -1,0 +1,489 @@
+{
+  "timestamp": "2026-01-01T23:20:32.337665",
+  "config": {
+    "n_profiles_list": [
+      20,
+      50,
+      100
+    ],
+    "n_weeks": 12,
+    "seeds": [
+      42,
+      123,
+      456,
+      789,
+      1000
+    ]
+  },
+  "baseline_params": {
+    "threshold_low": 0.8,
+    "threshold_optimal_high": 1.3,
+    "threshold_caution": 1.5,
+    "threshold_critical": 2.0,
+    "green_base": 0.2,
+    "green_min": 0.05,
+    "green_max": 0.15,
+    "low_base": 0.25,
+    "low_min": 0.1,
+    "low_max": 0.2,
+    "caution_value": 0.0,
+    "red_base": -0.2,
+    "red_min": -0.15,
+    "red_max": -0.05,
+    "critical_value": -0.3,
+    "critical_flag": true,
+    "persistent_weeks_threshold": 2,
+    "persistent_critical_action": -0.3
+  },
+  "optimized_params": {
+    "threshold_low": 0.7288641068536095,
+    "threshold_optimal_high": 1.3683551866464587,
+    "threshold_caution": 1.589565080399933,
+    "threshold_critical": 1.857170977754538,
+    "green_base": 0.198759752731878,
+    "green_min": 0.07922927810608335,
+    "green_max": 0.17266212099701378,
+    "low_base": 0.25787836174707257,
+    "low_min": 0.13925816675734223,
+    "low_max": 0.150438516503387,
+    "caution_value": 0.037668254024198065,
+    "red_base": -0.15603393704574484,
+    "red_min": -0.12007749363610017,
+    "red_max": -0.05689061112783289,
+    "critical_value": -0.32161096697770003,
+    "critical_flag": true,
+    "persistent_weeks_threshold": 2,
+    "persistent_critical_action": -0.3
+  },
+  "seed_variance": {
+    "baseline": {
+      "n_seeds": 5,
+      "per_seed_metrics": [
+        {
+          "mean_growth_ratio": 1.8244337912918305,
+          "pct_target_reached": 30.0,
+          "mean_risk_events": 0.45,
+          "risk_event_rate": 3.75
+        },
+        {
+          "mean_growth_ratio": 1.5742218233357423,
+          "pct_target_reached": 10.0,
+          "mean_risk_events": 0.65,
+          "risk_event_rate": 5.416666666666667
+        },
+        {
+          "mean_growth_ratio": 1.6893108195084667,
+          "pct_target_reached": 20.0,
+          "mean_risk_events": 0.5,
+          "risk_event_rate": 4.166666666666666
+        },
+        {
+          "mean_growth_ratio": 1.816721589239446,
+          "pct_target_reached": 25.0,
+          "mean_risk_events": 0.2,
+          "risk_event_rate": 1.6666666666666667
+        },
+        {
+          "mean_growth_ratio": 1.6976204426781265,
+          "pct_target_reached": 25.0,
+          "mean_risk_events": 0.45,
+          "risk_event_rate": 3.75
+        }
+      ],
+      "variance_analysis": {
+        "mean_growth_ratio": {
+          "mean": 1.7204616932107222,
+          "std": 0.09268696128604716,
+          "min": 1.5742218233357423,
+          "max": 1.8244337912918305,
+          "range": 0.25021196795608813,
+          "cv": 0.05387330717783954
+        },
+        "pct_target_reached": {
+          "mean": 22.0,
+          "std": 6.782329983125268,
+          "min": 10.0,
+          "max": 30.0,
+          "range": 20.0,
+          "cv": 0.308287726505694
+        },
+        "mean_risk_events": {
+          "mean": 0.45,
+          "std": 0.14491376746189438,
+          "min": 0.2,
+          "max": 0.65,
+          "range": 0.45,
+          "cv": 0.3220305943597653
+        },
+        "risk_event_rate": {
+          "mean": 3.75,
+          "std": 1.20761472884912,
+          "min": 1.6666666666666667,
+          "max": 5.416666666666667,
+          "range": 3.75,
+          "cv": 0.32203059435976533
+        }
+      },
+      "high_variance_metrics": [
+        "pct_target_reached",
+        "mean_risk_events",
+        "risk_event_rate"
+      ]
+    },
+    "optimized": {
+      "n_seeds": 5,
+      "per_seed_metrics": [
+        {
+          "mean_growth_ratio": 2.5027005471537653,
+          "pct_target_reached": 55.00000000000001,
+          "mean_risk_events": 0.6,
+          "risk_event_rate": 5.0
+        },
+        {
+          "mean_growth_ratio": 2.1131763190449897,
+          "pct_target_reached": 50.0,
+          "mean_risk_events": 0.9,
+          "risk_event_rate": 7.5
+        },
+        {
+          "mean_growth_ratio": 2.3120562118690384,
+          "pct_target_reached": 50.0,
+          "mean_risk_events": 0.8,
+          "risk_event_rate": 6.666666666666667
+        },
+        {
+          "mean_growth_ratio": 2.548484364627747,
+          "pct_target_reached": 65.0,
+          "mean_risk_events": 0.35,
+          "risk_event_rate": 2.9166666666666665
+        },
+        {
+          "mean_growth_ratio": 2.408304014988728,
+          "pct_target_reached": 55.00000000000001,
+          "mean_risk_events": 0.65,
+          "risk_event_rate": 5.416666666666667
+        }
+      ],
+      "variance_analysis": {
+        "mean_growth_ratio": {
+          "mean": 2.3769442915368537,
+          "std": 0.15492454353861332,
+          "min": 2.1131763190449897,
+          "max": 2.548484364627747,
+          "range": 0.43530804558275715,
+          "cv": 0.06517802882054262
+        },
+        "pct_target_reached": {
+          "mean": 55.0,
+          "std": 5.477225575051661,
+          "min": 50.0,
+          "max": 65.0,
+          "range": 15.0,
+          "cv": 0.09958591954639384
+        },
+        "mean_risk_events": {
+          "mean": 0.6599999999999999,
+          "std": 0.1881488772222678,
+          "min": 0.35,
+          "max": 0.9,
+          "range": 0.55,
+          "cv": 0.2850740563973755
+        },
+        "risk_event_rate": {
+          "mean": 5.500000000000001,
+          "std": 1.567907310185565,
+          "min": 2.9166666666666665,
+          "max": 7.5,
+          "range": 4.583333333333334,
+          "cv": 0.2850740563973754
+        }
+      },
+      "high_variance_metrics": [
+        "mean_risk_events",
+        "risk_event_rate"
+      ]
+    }
+  },
+  "sample_size_analysis": {
+    "20": {
+      "baseline_agg": {
+        "n_simulations": 20,
+        "mean_growth_ratio": 1.8244337912918305,
+        "std_growth_ratio": 0.7595412662571099,
+        "min_growth_ratio": 0.8128434981199227,
+        "max_growth_ratio": 3.32082819049406,
+        "pct_target_reached": 30.0,
+        "mean_risk_events": 0.45,
+        "total_risk_events": 9,
+        "pct_with_injury_proxy": 0.0,
+        "mean_volume_std": 0.8370775945719041,
+        "risk_event_rate": 3.75
+      },
+      "optimized_agg": {
+        "n_simulations": 20,
+        "mean_growth_ratio": 2.5027005471537653,
+        "std_growth_ratio": 0.8982265910389521,
+        "min_growth_ratio": 1.1544778943156275,
+        "max_growth_ratio": 4.290705795934749,
+        "pct_target_reached": 55.00000000000001,
+        "mean_risk_events": 0.6,
+        "total_risk_events": 12,
+        "pct_with_injury_proxy": 0.0,
+        "mean_volume_std": 0.8510827638897724,
+        "risk_event_rate": 5.0
+      },
+      "tests": {
+        "growth_ratio": {
+          "test_name": "T-test: growth_ratio",
+          "statistic": 2.513356956389999,
+          "p_value": 0.016317830597557936,
+          "effect_size": 0.7947932555220886,
+          "effect_size_interpretation": "medium",
+          "ci_lower": -1.87760138380528,
+          "ci_upper": -1.0874928725483046,
+          "n1": 20,
+          "n2": 20,
+          "significant_05": true,
+          "significant_01": false
+        },
+        "target_reached": {
+          "test_name": "T-test: target_reached",
+          "statistic": 1.611095408503341,
+          "p_value": 0.11543535850022427,
+          "effect_size": 0.5094731018709965,
+          "effect_size_interpretation": "medium",
+          "ci_lower": -0.37500000000000006,
+          "ci_upper": 0.025000000000000022,
+          "n1": 20,
+          "n2": 20,
+          "significant_05": false,
+          "significant_01": false
+        },
+        "risk_events": {
+          "test_name": "T-test: risk_events",
+          "statistic": 0.5550748671198399,
+          "p_value": 0.5820964530937844,
+          "effect_size": 0.17553008520140015,
+          "effect_size_interpretation": "negligible",
+          "ci_lower": -0.7250000000000001,
+          "ci_upper": 0.02499999999999991,
+          "n1": 20,
+          "n2": 20,
+          "significant_05": false,
+          "significant_01": false
+        }
+      }
+    },
+    "50": {
+      "baseline_agg": {
+        "n_simulations": 50,
+        "mean_growth_ratio": 1.847316214694067,
+        "std_growth_ratio": 0.6727550101298839,
+        "min_growth_ratio": 0.8128434981199227,
+        "max_growth_ratio": 3.7288513879681133,
+        "pct_target_reached": 26.0,
+        "mean_risk_events": 0.54,
+        "total_risk_events": 27,
+        "pct_with_injury_proxy": 0.0,
+        "mean_volume_std": 0.7609711287028127,
+        "risk_event_rate": 4.5
+      },
+      "optimized_agg": {
+        "n_simulations": 50,
+        "mean_growth_ratio": 2.5360021591384525,
+        "std_growth_ratio": 0.9037886634232549,
+        "min_growth_ratio": 1.1544778943156275,
+        "max_growth_ratio": 5.1732687320414,
+        "pct_target_reached": 57.99999999999999,
+        "mean_risk_events": 0.8,
+        "total_risk_events": 40,
+        "pct_with_injury_proxy": 0.0,
+        "mean_volume_std": 0.7795334872071479,
+        "risk_event_rate": 6.666666666666667
+      },
+      "tests": {
+        "growth_ratio": {
+          "test_name": "T-test: growth_ratio",
+          "statistic": 4.278724505209459,
+          "p_value": 4.377502327352957e-05,
+          "effect_size": 0.8557449010418919,
+          "effect_size_interpretation": "large",
+          "ci_lower": -1.7491946925644897,
+          "ci_upper": -1.2471887606724537,
+          "n1": 50,
+          "n2": 50,
+          "significant_05": true,
+          "significant_01": true
+        },
+        "target_reached": {
+          "test_name": "T-test: target_reached",
+          "statistic": 3.3923821837661423,
+          "p_value": 0.001000672181121398,
+          "effect_size": 0.6784764367532286,
+          "effect_size_interpretation": "medium",
+          "ci_lower": -0.24,
+          "ci_upper": 0.040000000000000036,
+          "n1": 50,
+          "n2": 50,
+          "significant_05": true,
+          "significant_01": true
+        },
+        "risk_events": {
+          "test_name": "T-test: risk_events",
+          "statistic": 1.3244159187913336,
+          "p_value": 0.18844537084635923,
+          "effect_size": 0.2648831837582667,
+          "effect_size_interpretation": "small",
+          "ci_lower": -0.7100000000000001,
+          "ci_upper": -0.09000000000000002,
+          "n1": 50,
+          "n2": 50,
+          "significant_05": false,
+          "significant_01": false
+        }
+      }
+    },
+    "100": {
+      "baseline_agg": {
+        "n_simulations": 100,
+        "mean_growth_ratio": 1.7501151074152939,
+        "std_growth_ratio": 0.6941847096765386,
+        "min_growth_ratio": 0.0,
+        "max_growth_ratio": 3.7288513879681133,
+        "pct_target_reached": 25.0,
+        "mean_risk_events": 0.47,
+        "total_risk_events": 47,
+        "pct_with_injury_proxy": 0.0,
+        "mean_volume_std": 0.6945013746702695,
+        "risk_event_rate": 3.916666666666667
+      },
+      "optimized_agg": {
+        "n_simulations": 100,
+        "mean_growth_ratio": 2.42029902678412,
+        "std_growth_ratio": 0.9096712346697264,
+        "min_growth_ratio": 0.0,
+        "max_growth_ratio": 5.1732687320414,
+        "pct_target_reached": 57.99999999999999,
+        "mean_risk_events": 0.73,
+        "total_risk_events": 73,
+        "pct_with_injury_proxy": 0.0,
+        "mean_volume_std": 0.7093638889480651,
+        "risk_event_rate": 6.083333333333334
+      },
+      "tests": {
+        "growth_ratio": {
+          "test_name": "T-test: growth_ratio",
+          "statistic": 5.827421064108927,
+          "p_value": 2.2521853401775395e-08,
+          "effect_size": 0.8241217902521499,
+          "effect_size_interpretation": "large",
+          "ci_lower": -1.5909573350000195,
+          "ci_upper": -1.2353148907712295,
+          "n1": 100,
+          "n2": 100,
+          "significant_05": true,
+          "significant_01": true
+        },
+        "target_reached": {
+          "test_name": "T-test: target_reached",
+          "statistic": 5.000835003345833,
+          "p_value": 1.2545077582425341e-06,
+          "effect_size": 0.707224868492178,
+          "effect_size_interpretation": "medium",
+          "ci_lower": -0.18500000000000005,
+          "ci_upper": 0.015000000000000013,
+          "n1": 100,
+          "n2": 100,
+          "significant_05": true,
+          "significant_01": true
+        },
+        "risk_events": {
+          "test_name": "T-test: risk_events",
+          "statistic": 2.0041368810784026,
+          "p_value": 0.046418117534825366,
+          "effect_size": 0.28342775580731916,
+          "effect_size_interpretation": "small",
+          "ci_lower": -0.53,
+          "ci_upper": -0.13000000000000006,
+          "n1": 100,
+          "n2": 100,
+          "significant_05": true,
+          "significant_01": false
+        }
+      }
+    }
+  },
+  "power_analysis": {
+    "growth_ratio": {
+      "observed_effect_size": 0.7947932555220886,
+      "required_n_for_80_power": 25,
+      "achieved_power_at_n20": 0.7100028247874274
+    },
+    "target_reached": {
+      "observed_effect_size": 0.5094731018709965,
+      "required_n_for_80_power": 61,
+      "achieved_power_at_n20": 0.3635939887270947
+    },
+    "risk_events": {
+      "observed_effect_size": 0.17553008520140015,
+      "required_n_for_80_power": 510,
+      "achieved_power_at_n20": 0.08002712657246391
+    }
+  },
+  "bootstrap_ci": {
+    "growth_ratio": {
+      "baseline": {
+        "estimate": 1.8244337912918305,
+        "ci_lower": 1.4965008901937409,
+        "ci_upper": 2.1589400738511464
+      },
+      "optimized": {
+        "estimate": 2.5027005471537653,
+        "ci_lower": 2.1103995767093484,
+        "ci_upper": 2.9005080879663234
+      }
+    },
+    "risk_events": {
+      "baseline": {
+        "estimate": 0.45,
+        "ci_lower": 0.15,
+        "ci_upper": 0.85
+      },
+      "optimized": {
+        "estimate": 0.6,
+        "ci_lower": 0.25,
+        "ci_upper": 1.0
+      }
+    }
+  },
+  "independence_check": {
+    "high_correlations": [
+      {
+        "metric1": "growth_ratio",
+        "metric2": "target_reached",
+        "correlation": 0.872766746117663
+      }
+    ],
+    "independence_concern": true
+  },
+  "overfitting_check": {
+    "train_improvement": {
+      "growth_ratio": 0.6782667558619349,
+      "target_reached": 25.000000000000007,
+      "risk_reduction": -0.14999999999999997
+    },
+    "test_improvement": {
+      "growth_ratio": 0.7128165974018925,
+      "target_reached": 40.0,
+      "risk_reduction": -0.19999999999999996
+    },
+    "overfitting_ratio": {
+      "growth_ratio": 0.9515305316039405,
+      "target_reached": 0.6250000000000002,
+      "risk_reduction": 0.75
+    },
+    "overfitting_detected": false,
+    "train_n": 20,
+    "test_n": 20
+  }
+}
