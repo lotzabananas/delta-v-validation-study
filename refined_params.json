@@ -1,0 +1,20 @@
+{
+  "threshold_low": 0.8,
+  "threshold_optimal_high": 1.3,
+  "threshold_caution": 1.5,
+  "threshold_critical": 2.0,
+  "green_base": 0.12,
+  "green_min": 0.03,
+  "green_max": 0.1,
+  "low_base": 0.18,
+  "low_min": 0.08,
+  "low_max": 0.15,
+  "caution_value": 0.0,
+  "red_base": -0.25,
+  "red_min": -0.2,
+  "red_max": -0.08,
+  "critical_value": -0.35,
+  "critical_flag": true,
+  "persistent_weeks_threshold": 2,
+  "persistent_critical_action": -0.3
+}

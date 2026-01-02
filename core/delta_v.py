@@ -214,6 +214,32 @@ def calculate_delta_v(
     return delta_v, 'low', False
 
 
+def classify_acwr_zone(acwr: float, params: Optional[DeltaVParams] = None) -> str:
+    """
+    Classify ACWR into training zones.
+
+    Args:
+        acwr: Current ACWR value
+        params: DeltaVParams (uses defaults if None)
+
+    Returns:
+        Zone name: 'low', 'optimal', 'caution', 'red', 'critical'
+    """
+    if params is None:
+        params = DeltaVParams()
+
+    if acwr >= params.threshold_critical:
+        return 'critical'
+    elif acwr >= params.threshold_caution:
+        return 'red'
+    elif acwr >= params.threshold_optimal_high:
+        return 'caution'
+    elif acwr >= params.threshold_low:
+        return 'optimal'
+    else:
+        return 'low'
+
+
 def apply_delta_v(current_volume: float, delta_v: float) -> float:
     """
     Apply Delta V to current volume.
