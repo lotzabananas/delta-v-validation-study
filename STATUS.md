@@ -168,6 +168,43 @@ jupyter notebook notebooks/delta_v_analysis.ipynb
 4. **Enhanced model recommended**: 115% improvement in pre-injury detection
 5. **Effect size modest**: RR = 1.3 (not 2-3x as some literature suggests)
 
+### 7. Delta V Parameter Optimization (January 2, 2026)
+
+#### Optimization Method
+- **Algorithm**: Differential Evolution
+- **Objective**: Maximize growth while minimizing injury risk
+- **Constraint**: Used empirical injury rates from validation study (RR = 1.30)
+
+#### Optimized Parameters
+| Parameter | Default | Optimized | Change |
+|-----------|---------|-----------|--------|
+| green_base | 0.20 | **0.30** | +50% |
+| green_max | 0.15 | **0.20** | +33% |
+| low_base | 0.25 | **0.31** | +24% |
+| caution_value | 0.00 | **+0.02** | +2% |
+| red_base | -0.20 | **-0.26** | -30% |
+| critical_value | -0.30 | **-0.27** | +10% |
+
+#### Statistical Validation
+| Metric | Default | Optimized | 95% CI |
+|--------|---------|-----------|--------|
+| Growth Rate | 2.07x | **2.24x** | [2.14, 2.30] |
+| Achieved 2x | 53.5% | **64.9%** | [54.5%, 72.0%] |
+
+**Holdout Test (10 populations, 200 athletes each)**:
+- Mean improvement: **+7.84%**
+- p-value: **< 0.0001**
+- All 10 holdout populations showed improvement
+
+#### Key Insight
+> "Push harder when it's safe, pull back faster when it's not."
+
+Files:
+- `OPTIMIZED_EQUATION.md` - Full optimized equation documentation
+- `optimized_params_v2.json` - Machine-readable parameters
+- `optimization/delta_v_optimizer.py` - Optimization code
+- `optimization/bootstrap_validation.py` - Validation code
+
 ## Next Steps (if continuing)
 
 1. Test on additional populations (recreational athletes, other sports)
